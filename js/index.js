@@ -29,4 +29,14 @@ Dest.addEventListener('click', function(event) {
 const nav1 = document.querySelector('.btn');
 nav1.addEventListener('click', function(event) {
     alert('Yes I AM in fact a link but I do not in fact work');
+});
+
+document.addEventListener('mouseover', function(event) {
+    console.log(event.clientX, event.clientY);
+});
+
+document.addEventListener('scroll', function(event) {
+    if(event.key === 'A') {
+        console.log('ahhhhh');
+    }
 })
